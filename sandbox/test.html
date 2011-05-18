@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>My RSS Feed- Cloud9 Edition</title>	
+	<link rel="stylesheet" type="text/css" href="css/style.css" />		
+	<script language="javascript" src="scripts/rss.js"></script>
+</head>
+<body>
+
+    <div id="buttons">
+        <button onclick="loadXMLDoc('xml/cd_catalog.xml')">Get CD info</button>
+        <button onclick="getRSS('xml/feed.xml')">Get feed info</button>
+        <button onclick="getXML('xml/feed.xml')">Snips Test</button>
+    </div>
+    
+    <div id="txtCDInfo"> </div>
+
+    <div id="chan">
+        <div id="chan_title"></div>
+        <div id="chan_link"></div>
+        <div id="chan_description"></div>
+        <a id="chan_image_link" href=""></a>
+        <div id="chan_items"></div>
+        <div id="chan_pubDate"></div>
+        <div id="chan_copyright"></div>
+    </div>
+    
+    <div id="snips">Change me, damn it! </div>
+    
+    <div id="oops">Umm...</div>
+
+</body>
+</html>

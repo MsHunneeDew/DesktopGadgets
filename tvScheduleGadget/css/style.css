@@ -1,0 +1,58 @@
+body 
+{ 
+	width:420;
+	height:800;
+	font-family:"calibri", sans-serif;
+	margin:1px
+}
+
+table
+{
+	width:100%;
+	border-collapse:collapse;
+	font-size:13px;
+	background-color:#FFFFFF;
+}
+
+tr, td
+{
+	border: 1px solid black;
+	padding:3;
+}
+
+.heading
+{
+	text-align:center;
+	font-weight:bold;
+	font-size:110%;
+	background:#00DD77;
+}
+
+a:link, a:visited
+{
+	text-decoration:none;
+	color:#000000;
+}
+
+a:link.hulu, a:visited.hulu
+{
+	text-decoration:none;
+	color:#008000;
+}
+
+.hulu
+{
+	color:#008000;
+}
+
+.soon
+{
+	font-size:75%;
+	font-style:italic;
+}
+
+.new 
+{
+	color:#B22222;
+	font-style:italic;
+}
