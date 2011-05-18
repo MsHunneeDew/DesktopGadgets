@@ -1,5 +1,5 @@
 /*Gets the pubDate's from the show's rss feed and compares it to today's date. Returns true if there is a newer than one week ago and false if not.*/
-function compareDates(xmlFeedDoc)
+function compareDates(xmlFeedDoc) // **WORKING HERE**
 {
     var isNew = false;
     
@@ -18,7 +18,7 @@ function compareDates(xmlFeedDoc)
 }
 
 /*Gets XMLHttpRequest object from an URL and calls compareDates() to process it. Returns true or false based on what compareDates() returns*/
-function loadRSSFeedXml(urlToRssFeed) //WORKING HERE
+function loadRSSFeedXml(urlToRssFeed)
 {
     if(urlToRssFeed !== "STUBBED")
     {
@@ -56,7 +56,7 @@ function loadRSSFeedXml(urlToRssFeed) //WORKING HERE
     }
 }
 
-/*Checks to see if there are new shows. Returns text to place in html page. -UNFINISHED*/
+/*Checks to see if there are new shows. Returns text to place in html page.*/
 function checkForNewShow(urlToRssFeed)
 {
     var isNew = loadRSSFeedXml(urlToRssFeed);
@@ -117,6 +117,8 @@ function buildList(xmlDoc)
 /*Gets XMLHttpRequest object from an URL and calls buildList() to process it.*/
 function loadShowXML(urlToXML)
 {
+    
+    
     var xhttp;
     if (window.XMLHttpRequest)
     {
@@ -135,4 +137,5 @@ function loadShowXML(urlToXML)
         }            
     };
     xhttp.send();
+    
 }
